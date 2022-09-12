@@ -6,9 +6,21 @@ import {
 import AppRoute from './routes/Route';
 import { loadUser } from './reducers/useReducers'
 import { useDispatch } from 'react-redux'
+import { extendTheme } from "@chakra-ui/react"
 import Cookies from 'js-cookie'
+import "./assets/css/app.css";
 
 function App() {
+
+  const theme = extendTheme({
+    colors: {
+      brand: {
+        100: "#071A2F",
+        200:'#fff',
+        300:'#66B2FF'
+      },
+    },
+  })
 
   const dispatch = useDispatch();
 
