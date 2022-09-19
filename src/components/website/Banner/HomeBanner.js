@@ -1,12 +1,13 @@
 import { Box, Button, color, Container, FormControl, Heading, Icon, Input, Stack , Text} from '@chakra-ui/react'
 import React from 'react'
 import { BiSearchAlt} from 'react-icons/bi'
+import Bannercoupon from '../Bannercoupon/BannerCoupon.js'
 
 export default function HomeBanner() {
   return (
     <>
   
-    <Stack py={'32'} bg={'#001E3C'} w={'full'} textAlign={'center'}>
+    <Stack pt={'120px'} bg={'#001E3C'} w={'full'} textAlign={'center'}>
     <Container maxW={'8xl'}>
     <Box mb={'10'}>
     <Heading mb={'3'} color={'#fff'} as='h2' size='xl'>
@@ -29,6 +30,9 @@ export default function HomeBanner() {
   _placeholder={{color:'#fff',fontSize:'16px'}} />
 <Button  bg={'brand.300'} w={'45px'} h={'45px'} borderRadius={'50%'} position={'absolute'} margin={'auto'} top={'0'} bottom={'0'} right={'6px'}><Icon color={'brand.200'} boxSize='25px' as={BiSearchAlt}/></Button>
 </FormControl>
+    </Stack>
+    <Stack>
+      <Bannercoupon/>
     </Stack>
     </Container>
     </Stack>

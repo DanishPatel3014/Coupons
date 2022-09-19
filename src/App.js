@@ -17,7 +17,9 @@ function App() {
       brand: {
         100: "#071A2F",
         200:'#fff',
-        300:'#66B2FF'
+        300:'#66B2FF',
+        400:'BlackAlpha 800',
+        500:'#A0AEC0'
       },
     },
   })
